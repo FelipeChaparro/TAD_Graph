@@ -63,7 +63,7 @@ int main( int args, char* argv[] ) {
   // sudo apt-get install graphviz
   g.PrintAsPNG( "Wikipedia.png" );
   std::cout << "Vertex: " << g.CountVertex( ) << std::endl;
-  std::cout << "Distancia ( A, Z ): " << g.Dijkstra( g.ReturnIndex( 'a' ), g.ReturnIndex( 'z' ), route ) << std::endl;
+  std::cout << "Distance of shortest path ( A, Z ): " << g.Dijkstra( g.ReturnIndex( 'a' ), g.ReturnIndex( 'z' ), route ) << std::endl;
   //
   std::cout << "Route: ";
   while ( !route.empty() ) {
